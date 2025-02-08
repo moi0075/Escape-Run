@@ -14,7 +14,7 @@ export default class Game {
 
     constructor(canvas) {
         this.canvas = canvas;
-        // etat du clavier
+        // état du clavier
         this.inputStates = {
             mouseX: 0,
             mouseY: 0,
