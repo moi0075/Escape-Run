@@ -22,15 +22,22 @@ export default class Chrono {
     }
 
     //save dans local storage
-    save(currentLevel){
-        localStorage.setItem("chrono"+currentLevel, this.elapsedTime);
-    }
-
-    //Save min time
-    saveMin(currentLevel){
-        let minTime = localStorage.getItem("chrono"+currentLevel);
-        if(minTime === null || this.elapsedTime < minTime){
-            this.save(currentLevel);
+    save(currentLevel) {
+        var data = localStorage.getItem("chrono"+currentLevel);
+        if(data == null){
+            var newData = { bestscore: this.elapsedTime, lastscore: this.elapsedTime };  
+            localStorage.setItem("chrono" + currentLevel, JSON.stringify(newData));
+        }else{
+            var bestscore = JSON.parse(data).bestscore;
+            console.log("bestscore ici : "+bestscore)
+            if(this.elapsedTime < bestscore){
+                var newData = { bestscore: this.elapsedTime, lastscore: this.elapsedTime };  
+                localStorage.setItem("chrono" + currentLevel, JSON.stringify(newData));
+            }
+            if(this.elapsedTime >= bestscore){
+                var newData = { bestscore: bestscore, lastscore: this.elapsedTime };  
+                localStorage.setItem("chrono" + currentLevel, JSON.stringify(newData));
+            }
         }
     }
 
@@ -41,7 +48,8 @@ export default class Chrono {
             let key = localStorage.key(i); 
             let value = localStorage.getItem(key);  
             console.log(`${key}: ${value}`);
-            document.getElementById(key).textContent = Math.round(value/1000) + "s";
+            var data = JSON.parse(value)
+            document.getElementById(key).textContent = "🏆 " + Math.round(data.bestscore/1000) + "s " + " ⏱️ "+Math.round(data.lastscore/1000)+"s";
         }
         
     }

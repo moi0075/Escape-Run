@@ -332,7 +332,7 @@ export default class Game {
             if(obj instanceof Sortie) {
                 if(rectsOverlap(this.player.x-this.player.w/2, this.player.y - this.player.h/2, this.player.w, this.player.h, obj.x, obj.y, obj.w, obj.h)) {
                     //sauvgarder le temps
-                    this.chrono.saveMin(this.currentLevel);
+                    this.chrono.save(this.currentLevel);
 
                     if(this.currentLevel < this.maxLevel) {
                         console.log("Sortie atteinte");
