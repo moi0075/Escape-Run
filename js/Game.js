@@ -79,45 +79,45 @@ export default class Game {
         switch(level) {
             //Niveau :
             case 1:
-                this.objetsGraphiques.push(new Obstacle(0, 200, 600, 40, "red"));
-                this.objetsGraphiques.push(new Obstacle(200, 400, 600, 40, "red"));
-                this.objetsGraphiques.push(new Obstacle(0, 600, 600, 40, "red"));
+                this.objetsGraphiques.push(new Obstacle(0, 200, 600, 40, "#957564"));
+                this.objetsGraphiques.push(new Obstacle(200, 400, 600, 40, "#957564"));
+                this.objetsGraphiques.push(new Obstacle(0, 600, 600, 40, "#957564"));
                 this.objetsGraphiques.push(new Sortie(100, 700, 30, 30, "green"));
                 break;
             case 2:
-                this.objetsGraphiques.push(new Obstacle(200, 0, 40, 600, "red"));
-                this.objetsGraphiques.push(new Trap(200, 600, 40, 80, "blue"));
-                this.objetsGraphiques.push(new Obstacle(400, 200, 40, 600, "red"));
-                this.objetsGraphiques.push(new Trap(400, 120, 40, 80, "blue"));
-                this.objetsGraphiques.push(new Obstacle(600, 0, 40, 600, "red"));
-                this.objetsGraphiques.push(new Trap(600, 600, 40, 80, "blue"));
+                this.objetsGraphiques.push(new Obstacle(200, 0, 40, 600, "#957564"));
+                this.objetsGraphiques.push(new Trap(200, 600, 40, 80, "#EE6060"));
+                this.objetsGraphiques.push(new Obstacle(400, 200, 40, 600, "#957564"));
+                this.objetsGraphiques.push(new Trap(400, 120, 40, 80, "#EE6060"));
+                this.objetsGraphiques.push(new Obstacle(600, 0, 40, 600, "#957564"));
+                this.objetsGraphiques.push(new Trap(600, 600, 40, 80, "#EE6060"));
                 this.objetsGraphiques.push(new Sortie(700, 100, 30, 30, "green"));
                 break;
             case 3:
-                this.objetsGraphiques.push(new Obstacle(200, 0, 40, 500, "red"));
-                this.objetsGraphiques.push(new Obstacle(200, 700, 40, 100, "red"));
-                this.objetsGraphiques.push(new DynamiqueTrap(200, 500, 200, 660, 40, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new Obstacle(400, 0, 40, 100, "red"));
-                this.objetsGraphiques.push(new Obstacle(400, 300, 40, 500, "red"));
-                this.objetsGraphiques.push(new DynamiqueTrap(400, 260, 400, 100, 40, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new Obstacle(600, 0, 40, 500, "red"));
-                this.objetsGraphiques.push(new Obstacle(600, 700, 40, 100, "red"));
-                this.objetsGraphiques.push(new DynamiqueTrap(600, 500, 600, 660, 40, 40, "blue", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new Obstacle(200, 0, 40, 500, "#957564"));
+                this.objetsGraphiques.push(new Obstacle(200, 700, 40, 100, "#957564"));
+                this.objetsGraphiques.push(new DynamiqueTrap(200, 500, 200, 660, 40, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new Obstacle(400, 0, 40, 100, "#957564"));
+                this.objetsGraphiques.push(new Obstacle(400, 300, 40, 500, "#957564"));
+                this.objetsGraphiques.push(new DynamiqueTrap(400, 260, 400, 100, 40, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new Obstacle(600, 0, 40, 500, "#957564"));
+                this.objetsGraphiques.push(new Obstacle(600, 700, 40, 100, "#957564"));
+                this.objetsGraphiques.push(new DynamiqueTrap(600, 500, 600, 660, 40, 40, "#EE6060", 0.008, 0, 0, 0));
                 this.objetsGraphiques.push(new Sortie(700, 100, 30, 30, "green"));
                 break;
             case 4:
-                this.objetsGraphiques.push(new Obstacle(0, 200, 700, 40, "red"));
-                this.objetsGraphiques.push(new DynamiqueTrap(200, 0, 200, 160, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new DynamiqueTrap(393, 160, 393, 0, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new DynamiqueTrap(587, 0, 587, 160, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new Obstacle(200, 400, 700, 40, "red"));
-                this.objetsGraphiques.push(new DynamiqueTrap(200, 240, 200, 360, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new DynamiqueTrap(393, 360, 393, 240, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new DynamiqueTrap(587, 240, 587, 360, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new Obstacle(0, 600, 700, 40, "red"));
-                this.objetsGraphiques.push(new DynamiqueTrap(200, 440, 200, 560, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new DynamiqueTrap(393, 560, 393, 440, 113, 40, "blue", 0.008, 0, 0, 0));
-                this.objetsGraphiques.push(new DynamiqueTrap(587, 440, 587, 560, 113, 40, "blue", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new Obstacle(0, 200, 700, 40, "#957564"));
+                this.objetsGraphiques.push(new DynamiqueTrap(200, 0, 200, 160, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new DynamiqueTrap(393, 160, 393, 0, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new DynamiqueTrap(587, 0, 587, 160, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new Obstacle(200, 400, 700, 40, "#957564"));
+                this.objetsGraphiques.push(new DynamiqueTrap(200, 240, 200, 360, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new DynamiqueTrap(393, 360, 393, 240, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new DynamiqueTrap(587, 240, 587, 360, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new Obstacle(0, 600, 700, 40, "#957564"));
+                this.objetsGraphiques.push(new DynamiqueTrap(200, 440, 200, 560, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new DynamiqueTrap(393, 560, 393, 440, 113, 40, "#EE6060", 0.008, 0, 0, 0));
+                this.objetsGraphiques.push(new DynamiqueTrap(587, 440, 587, 560, 113, 40, "#EE6060", 0.008, 0, 0, 0));
                 this.objetsGraphiques.push(new Sortie(100, 700, 30, 30, "green"));
                 
         }
