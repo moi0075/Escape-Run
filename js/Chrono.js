@@ -49,7 +49,7 @@ export default class Chrono {
             let value = localStorage.getItem(key);  
             console.log(`${key}: ${value}`);
             var data = JSON.parse(value)
-            document.getElementById(key).textContent = "🏆 " + Math.round(data.bestscore/1000) + "s " + " ⏱️ "+Math.round(data.lastscore/1000)+"s";
+            document.getElementById(key).textContent = "🏆 " + (data.bestscore / 1000).toFixed(1) + "s " + " ⏱️ " + (data.lastscore / 1000).toFixed(1) + "s";
         }
         
     }
