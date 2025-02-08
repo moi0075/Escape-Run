@@ -1,0 +1,15 @@
+#myCanvas {
+    border: 1px solid black;
+    background-color: lightgrey;
+}
+
+#levelButtons{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#container {
+    display: flex;
+    gap: 50px;
+}
