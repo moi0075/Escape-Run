@@ -1,7 +1,7 @@
 # Escape Run 🐢
 
 ## Description
-Escape Run est un jeu de plateforme où vous contrôlez une tortue qui doit s'échapper de différents niveaux en évitant les obstacles et les pièges. Le but est d'atteindre la sortie le plus rapidement possible.
+Escape Run est un jeu où vous contrôlez une tortue qui doit s'échapper de différents niveaux en évitant les obstacles et les pièges. Le but est d'atteindre la sortie le plus rapidement possible.
 
 ## Technologies utilisées
 - HTML5
